@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "teste2/src/menuOpcoes/menuOpcoes/menuOpcoes",
+        "teste1/src/AjusteSalarial",
+        "MenuOpcoes/src/menuOpcoes/menuOpcoes",
+        "Caso/src/Aniversario",
+        "AjusteSalarial/src",
+        "teste3/src/pessoas"
+    ]
+}

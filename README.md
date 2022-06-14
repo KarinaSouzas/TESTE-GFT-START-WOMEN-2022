@@ -1,0 +1,3 @@
+# TESTE-GFT-START-WOMEN-2022
+Usei varios meios de pesquisas como DEVMEDIA, DIO, YouTube, minhas propias anotações, 
+projetos ja existentes na minha máquina...

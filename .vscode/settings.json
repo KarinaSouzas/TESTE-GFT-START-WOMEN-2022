@@ -1,10 +1,11 @@
 {
     "java.project.sourcePaths": [
+        "teste3/src/pessoas",
         "teste2/src/menuOpcoes/menuOpcoes/menuOpcoes",
         "teste1/src/AjusteSalarial",
         "MenuOpcoes/src/menuOpcoes/menuOpcoes",
         "Caso/src/Aniversario",
         "AjusteSalarial/src",
-        "teste3/src/pessoas"
+        "teste4/src/Aniversario/aniversario"
     ]
 }

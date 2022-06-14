@@ -3,57 +3,49 @@ package pessoas;
 import java.util.Scanner;
 public class pessoa {    
        public static void main(String[] args) {
+    
         
-            Scanner entrada = new Scanner(System.in);
-            
-            int idade, cont = 1;
-            double altura, somaAltura = 0, alturas = 0, peso;
-            int idades = 0, pesos = 0;
-            
-            do{
-                System.out.println("Digite uma idade");
-                idade = entrada.nextInt();
-                
-                System.out.println("Digite uma altura");
-                altura = entrada.nextDouble();
-                
-                System.out.println("Digite um peso");
-                peso = entrada.nextDouble();
-                
-                if(idade > 50){
-                    idades++; 
-                }
-                
-                if( (idade >= 10) && (idade <= 20) ){
-                    altura++;  
-                    somaAltura = altura + somaAltura; 
-                }
-                
-                if(peso < 40){
-                    pesos++;    
-                }
-                
-                cont++;
-                System.out.println("\n");
-            }while(cont <= 4);
-            
-            if(idades > 0){
-                System.out.println("Qntde de pessoas com idade acima de 50 anos: " + idades + "\n");
-            } else{
-                System.out.println("Nenhuma pessoa tem acima de 50 anos \n");
-            }
-            
-            if(alturas > 0){
-                System.out.println("A média de pessoas entre 10 e 20 anos é: " + (somaAltura / alturas) + "\n");
-            } else{
-                System.out.println("Nenhuma pessoa tem idade entre 10 e 20 anos \n");
-            }
-            
-            if(pesos > 0){
-                System.out.println("A percentagem de pessoas com peso inferior a 40 é: " + (pesos * 100 / (cont - 1)) + " %");
-            } else{
-                System.out.println("Nenhuma pessoa tem peso inferior a 40 kilos");
-            }
-        }
-    }
+        float media, pessoas190, pessoas150;
+        media=0;
+        pessoas190=0;
+        pessoas150=0;
+        int idade = 0;
+        double altura;
+        double peso;
+        int cont;
+        cont=0;
 
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Digite uma idade");
+        idade = entrada.nextInt();
+        
+        while (idade > 0)
+        {
+            System.out.println("Digite uma altura");
+            altura = entrada.nextDouble();
+            
+            System.out.println("Digite um peso");
+            peso = entrada.nextDouble();
+         
+        if (peso>90 && altura<1.50)
+            {
+                pessoas150++;
+            }
+            if (idade<30 && altura>1.90)
+            {
+                pessoas190++;
+            }
+            
+            for (int i = 0; i <= 10; i++) {
+                idade++;
+                media = idade / cont;
+            }
+            
+            break; 
+        }
+        
+        System.out.printf(" A media de idade das pessoas é: %.2f", media);
+        System.out.printf(" Quantidade de pessoas com peso superior a 90kg e altura inferior a 1,50 metros:%.f", pessoas150);
+        System.out.printf(" Porcentagem de pessoas com idade entre 10 e 30 anos entre as pessoas que medem mais de 1,90:%.f", ((pessoas190/idade)*100));
+        }
+}
